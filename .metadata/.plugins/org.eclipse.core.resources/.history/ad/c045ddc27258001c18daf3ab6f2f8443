@@ -27,7 +27,7 @@ public class DomainApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Client c1 = new Client(null, "Jose Valderez", "valderezpe@gmail.com");
+		Client c1 = new Client(null, "Jose Valderez", "alex@gmail.com");
 		
 		clientRepository.save(c1);
 		
