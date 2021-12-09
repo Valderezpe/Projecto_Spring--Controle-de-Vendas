@@ -80,5 +80,9 @@ public class OrderItem {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
+	public double getSubTotal() {
+		return quantity * price;
+	}
 	
 }
+

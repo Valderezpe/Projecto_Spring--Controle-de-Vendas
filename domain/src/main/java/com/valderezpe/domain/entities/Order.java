@@ -77,5 +77,11 @@ public class Order {
 		return items;
 	}
 	
-	
+	public double getTotal() {
+		double sum = 0.0;
+		for (OrderItem item : items) {
+			sum += item.getSubTotal();
+		}
+		return sum;
+	}
 }
