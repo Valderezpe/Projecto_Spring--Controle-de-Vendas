@@ -13,7 +13,6 @@ import com.valderezpe.domain.entities.OrderItem;
 import com.valderezpe.domain.entities.OrderStatus;
 import com.valderezpe.domain.entities.Product;
 import com.valderezpe.domain.repositories.ClientRepository;
-import com.valderezpe.domain.repositories.OrderItemRepository;
 import com.valderezpe.domain.repositories.OrderRepository;
 import com.valderezpe.domain.repositories.ProductRepository;
 
@@ -28,9 +27,6 @@ public class DomainApplication implements CommandLineRunner {
 	
 	@Autowired
 	private OrderRepository orderRepository;
-	
-	@Autowired
-	private OrderItemRepository orderItemRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DomainApplication.class, args);
